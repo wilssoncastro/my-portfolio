@@ -21,9 +21,9 @@ const Portfolio = () => {
   {
     id: 3,
     image: IMG3,
-    title: "Gift Expert",
-    github: "#",
-    demo: "https://onnichan.github.io/react-giftApi/"
+    title: "Gif App",
+    github: "https://github.com/wilssoncastro/Gif-App",
+    demo: "https://gif-app-rouge.vercel.app/"
   }]
 
 
