@@ -44,15 +44,15 @@ header{
 
 .me{
     display: flex;
-    background: linear-gradient(var(--color-primary), transparent) ;
-    width: 22rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
+    background: linear-gradient(var(--color-primary), transparent) ;    
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
     transform: translateX(-50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 7rem 7rem 0 0 ;
+    margin-top: 2rem;    
     overflow: hidden;
+    border: 4px solid var(--color-primary);
+    border-radius: 2rem;
       
 }
 
@@ -67,6 +67,25 @@ header{
     font-size: 0.9rem;
 }
 
+.text-colors{
+    background: linear-gradient(var(--color-primary), var( --color-white));
+    color: transparent;
+    font-size: 1.5rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    animation: text 3s linear infinite;
+}
+
+@keyframes text{
+    0%{
+        filter:hue-rotate(0deg)
+    }
+    100%{
+        filter:hue-rotate(360deg)
+    }
+}
+
 /* ================= MEDIA QUERIES(MEDIUM DEVICES)====================*/
 
 @media screen and (max-width:1024px){
@@ -74,7 +93,9 @@ header {
     height: 100vh;
 }
 .me{
-    height: 20rem;
+    width: 20rem;
+
+    left: auto;
 }
 
 }
@@ -85,7 +106,24 @@ header {
     header {
         height: 100vh;
     }
+    /* .header__socials, .scroll__down{
+        
+    } */
+    .me{
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 380px){
+
+
+    header {
+        height: 100vh;
+    }
     .header__socials, .scroll__down{
         display: none;
+    }
+    .me{
+        width: 18rem;
     }
 }
